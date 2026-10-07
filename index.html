@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="panel panel--left">
+        <div class="brand">
+          <div class="brand__icon">✓</div>
+          <div>
+            <p class="eyebrow">Productivité</p>
+            <h1>TodoFlow</h1>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <span class="summary-card__label">Aujourd'hui</span>
+          <strong id="totalTasks">0</strong>
+          <small>tâches en cours</small>
+        </div>
+
+        <ul class="menu-list">
+          <li class="active">Toutes les tâches</li>
+          <li>Priorité haute</li>
+          <li>À faire</li>
+          <li>Terminées</li>
+        </ul>
+      </aside>
+
+      <main class="panel panel--main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Tableau</p>
+            <h2>Ma liste</h2>
+          </div>
+          <button class="ghost-button" type="button">+ Nouveau</button>
+        </header>
+
+        <form id="todoForm" class="todo-form" autocomplete="off">
+          <label class="input-wrap">
+            <span class="sr-only">Nouvelle tâche</span>
+            <input id="taskInput" type="text" maxlength="120" placeholder="Ajouter une tâche..." aria-label="Nouvelle tâche" />
+          </label>
+          <button type="submit" class="primary-button">Ajouter</button>
+        </form>
+
+        <section class="task-header">
+          <span id="taskCount">0 tâches</span>
+          <button class="link-button" type="button" id="clearCompleted">Supprimer terminées</button>
+        </section>
+
+        <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
