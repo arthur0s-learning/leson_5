@@ -1,0 +1,20 @@
+{
+  "todo": [
+    {
+      "id": "1",
+      "tache": "test",
+      "completed": false
+    },
+    {
+      "tache": "ethrhtrh",
+      "completed": false,
+      "id": "a595z0v7mbI"
+    },
+    {
+      "tache": "ethrhtrh",
+      "completed": false,
+      "id": "8Pt1mUvdEx8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
